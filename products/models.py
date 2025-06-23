@@ -1,6 +1,12 @@
 from django.db import models
 
 
+"""
+This was taken from Boutique Ado project code.
+And a student project Fitness-subscription-app
+"""
+
+
 class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
