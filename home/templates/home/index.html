@@ -11,18 +11,50 @@
 {% endblock %}
 
 {% block content %}
-   <div class="container h-100">
+<!-- Introduction section -->
+<section class="home-view">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center text-white">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    Your fitness plans
+                <h1 class="display-4 title logo-font">
+                    Start Your Fitness Today With Perfect Nutrition Plan
                 </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="keep-fit-button btn btn-lg rounded-0 text-uppercase py-3">Keep Fit Here</a>
-                    </h4>
+                <p class="display-6 text-lg-centre mb-5">Are you looking for a fitness expert, Do you want to customize your 
+                    fitness plan and a community to  join. You are at the rigth place, so let get you started.  
+                </p>
+                <div class="button gap-3">
+                    <a href="{% url 'home' %}" class="btn btn-danger btn-lg">Keep Fit Here</a>
+                    <a href="{% url 'home' %}" class="btn btn-success btn-lg">View Plans</a>
                 </div>
             </div>
         </div>
     </div>
+</section>    
+<hr class="mt-5">
+<!-- About Us -->
+<section class="pt-md-4 width-rule mt-5">
+    <div class="container-fluid position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-6 offset-lg-6 center">
+                <h2 class="display-6 mb-4">About Us</h2>
+            </div>
+            <div class="col-lg-6 center">
+                <p class="fs-5">
+                    Keep Fit is a community of like minded people who's main goal is to help
+                    individual get good finess activities by utilizing the services of experts and 
+                    better nutrition practices 
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6 offset-lg-6 center">
+                <p class="fs-5">From workout plans to nutrition guidance, we offer everything you need to succeed. Plus,
+                    our community of subscribers shares their experiences, tips, and successes to motivate and inspire
+                    each other. Join Keep Fit today, and let’s reach your health and fitness goals together!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

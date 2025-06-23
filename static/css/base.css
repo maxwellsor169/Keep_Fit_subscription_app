@@ -9,6 +9,8 @@ body {
     color: #555;
     font-family: Lato, sans-serif;
 }
+
+
 /* for styling font awesome icons */
 .icon {
     align-items: center;
@@ -19,7 +21,11 @@ body {
 }
 
 .logo-font {
-    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.title, h1 {
+    color: deeppink;
 }
 
 .keep-fit-button {
@@ -51,6 +57,23 @@ body {
     border: 1px solid black !important;
 }
 
+section {
+    justify-self: center;
+    width: 100%;
+    margin-left: 20px;
+    padding-top: 35px;height: 70vh;
+    overflow: hidden;
+}
+
+.button {
+    justify-self: right;
+}
+
+.width-rule {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
 
 /* -------------------------------- Media Queries */
 
