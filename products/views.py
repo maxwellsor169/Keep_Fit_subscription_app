@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.db.models.functions import Lower
 
 from .models import Product, Category
+
+
 """
 This code is a combination of a student project 
 Fitness-subscription-app
