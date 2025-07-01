@@ -30,6 +30,14 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                    {% for c in all_categories %}
+                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge
+                            {% if c.name in selected_categories %} bg-dark text-white {% else %} bg-white text-black {% endif %}">
+                            {{ c.friendly_name }}
+                        </span>
+                    </a>
+                    {% endfor %}
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
