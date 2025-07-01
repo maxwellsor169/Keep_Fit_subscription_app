@@ -97,9 +97,17 @@ section {
 }
 
 .home-view p {
-    margin: 5%;
     font-weight: bold;
     color: #000000;
+}
+
+.button-1 {
+    padding-bottom: 5px;
+}
+
+.page {
+    margin: 18px 20px;
+    align-self: center;
 }
 
 .about {
@@ -141,4 +149,30 @@ section {
     .header-container {
         padding-top: 164px;
     }
+
 }
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 750px) {
+    .page {
+        display: flex;
+        margin-left: 0px;
+        margin-top: 1px;
+    }
+    .home-view {
+        width: 100%;
+        display: flex;
+        
+    }
+}
+
