@@ -15,8 +15,6 @@ from pathlib import Path
 if os.path.isfile('env.py'):
     import env
 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,8 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', # vs code
-    'localhost', # listen for webhook
+    '127.0.0.1',  # vs code
+    'localhost',  # listen for webhook
     'keep-fit-app-1a6153cb9738.herokuapp.com',  # heroku application
 ]
 
