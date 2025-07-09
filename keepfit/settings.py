@@ -31,7 +31,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = [
     '127.0.0.1',  # vs code
     'localhost',  # listen for webhook
-    'keep-fit-app-1a6153cb9738.herokuapp.com',  # heroku application
+    'https://keep-fit-app-1a6153cb9738.herokuapp.com/',  # heroku application
 ]
 
 
