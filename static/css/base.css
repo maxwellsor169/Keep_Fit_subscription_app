@@ -203,6 +203,8 @@ section {
     top: 72px;
     right: 15px;
     z-index: 99999999999;
+    display: flex;
+    justify-content: end;
 }
 
 .custom-toast {
