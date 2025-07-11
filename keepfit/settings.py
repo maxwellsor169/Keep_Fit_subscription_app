@@ -74,6 +74,8 @@ ROOT_URLCONF = 'keepfit.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
