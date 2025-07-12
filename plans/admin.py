@@ -16,6 +16,7 @@ class SubscribeAdmin(admin.ModelAdmin):
     ordering = ('level',)
     search_fields = ['name', 'description',]
     list_filter = ('category', 'level', 'price')
+    save_as = True
     
 
 admin.site.register(Subscribe, SubscribeAdmin)    

@@ -6,7 +6,7 @@ from .models import Subscribe
 
 
 def all_plans(request):
-    """ A view to show all products, including sorting queries """
+    """ A view to show all plans, including sorting queries """
 
     plans = Subscribe.objects.all()
     nutrition_plans = Subscribe.objects.filter(category='nutrition')
