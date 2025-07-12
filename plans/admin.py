@@ -5,17 +5,17 @@ from .models import Subscribe
 class SubscribeAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'stages',
+        'level',
         'category',
-        'charge',
+        'price',
         'rating',
         'image',
-        'subscription_duration',
+        'duration_weeks',
     )
 
-    ordering = ('stages',)
+    ordering = ('level',)
     search_fields = ['name', 'description',]
-    list_filter = ('category', 'stages', 'charge')
+    list_filter = ('category', 'level', 'price')
     
 
 admin.site.register(Subscribe, SubscribeAdmin)    
