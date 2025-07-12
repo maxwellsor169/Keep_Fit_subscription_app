@@ -10,4 +10,5 @@ urlpatterns = [
         views.remove_from_bag,
         name='remove_from_bag'
     ),
+    path('add/plan/<plan_id>/', views.add_plan_to_bag, name='add_plan_to_bag'),
 ]
