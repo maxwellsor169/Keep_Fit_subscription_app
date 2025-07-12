@@ -9,12 +9,12 @@ def all_plans(request):
 
     plans = Subscribe.objects.all()
     nutrition_plans = Subscribe.objects.filter(category='nutrition')
-    exercises_plans = Subscribe.objects.filter(category='exercises')
+    exercise_plans = Subscribe.objects.filter(category='exercise')
 
     context = {
         'plans': plans,
         'nutrition_plans': nutrition_plans,
-        'exercises_plans': exercises_plans,
+        'exercise_plans': exercise_plans,
     }
 
     return render(request, 'plans/plans.html', context)
